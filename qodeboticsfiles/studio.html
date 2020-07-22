@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="symmetricdynamite" content="qodebotics">
+    <title>qodebotics</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="" type="image/png">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../../assets/libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="../../assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="" id="header-main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg navbar-light" id="navbar-main">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="../../index.html">
+                    <img alt="Logo" src="" id="navbar-logo">
+                </a>
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">
+                    <!-- Toggler -->
+                    <div class="position-relative">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <i data-feather="x"></i>
+                        </button>
+                    </div>
+                    <!-- Main navigation -->
+                    <ul class="navbar-nav ml-lg-auto">
+                    <!-- Right navigation -->
+                    <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+                        <!-- Auth -->
+                        <li class="nav-item">
+                            <a href="" class="btn btn-md btn-primary btn-icon ml-3" target="_blank">
+                                <span class="btn-inner--text">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Mobile button -->
+                    <div class="d-lg-none px-4 text-center">
+                        <a href="" class="btn btn-block btn-sm btn-primary" target="_blank">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main content -->
+    <section class="section-half-rounded">
+        <div class="jumbotron section-inner left-0 rounded-right bg-primary overflow-hidden col-lg-9">
+            <img src="../../assets/img/backgrounds/img-2.jpg" alt="Image" class="img-as-bg">
+        </div>
+        <div class="container text-center text-lg-left py-5">
+            <div class="row">
+                <div class="col-lg-7 ml-auto">
+                    <div class="card shadow-lg rounded-lg mb-0">
+                        <div class="px-5 py-6">
+                            <h5 class="h1 font-weight-bold mb-3">Digital experiences crafted with <span class="text-primary typed" id="type-example-1" data-type-this="love., patience., dedication."></span></h5>
+                            <p class="lead lh-180">We develop next generation technologies. From IOT and Blockchain, to Mobile and Webapp development, our team can help.</p>
+                            <div class="mt-5">
+                                <a href="#" class="btn btn-primary btn-icon shadow-sm hover-translate-y-n3">
+                                    <span class="btn-inner--text">Learn More</span>
+                                    <span class="btn-inner--icon">
+                                        <i data-feather="arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class="container">
+            <!-- Title -->
+            <div class="row justify-content-lg-end">
+                <div class="col-lg-5 text-lg-right">
+                    <h6 class="display-4 text-danger">2k+</h6>
+                    <p class="lh-180 mb-3">
+                        Our mission is to create high quality digital products that give clients a competitive advantage. 
+                        From startup to fortune 500, we've got you covered.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="display-4 lh-130">Successfuly completed projects &amp; ideas</h3>
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card border-0 bg-secondary shadow-none">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="../../creativeblackwoman.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Unleash your creativity</h5>
+                            <p class="text-muted mb-0">Our designers breathe life into projects using modern UI and HCI concepts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-secondary shadow-none mt-lg-5">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="../../phonemobilewhiteman.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Get Better results</h5>
+                            <p class="text-muted mb-0">We use industry best practices, and our code is written for optimization to improve site performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 bg-secondary shadow-none mt-lg-7">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="../../undraw_content_team_3epn.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3">Pay lower costs</h5>
+                            <p class="text-muted mb-0">We take pride in providing high quality services at competitive rates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class="container">
+            <div class="row row-grid justify-content-around align-items-center">
+                <div class="col-lg-6 order-lg-2 ml-lg-auto pl-lg-6">
+                    <!-- Heading -->
+                    <h5 class="h2 mt-4">Our Programmers <strong>love</strong> challenges</h5>
+                    <!-- Text -->
+                    <p class="lead lh-190 my-4">
+                        Do you want to put a man on the moon, or build a giant talking robot? Your imagination and budget are the only obstacles. 
+                        For some challenges we may need to intravenously pump ourselves with caffeine, but our team will find a solution.   
+                    </p>
+                    <!-- List -->
+                    <ul class="list-unstyled">
+                        <li class="py-2">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="icon icon-shape icon-primary icon-sm rounded-circle mr-3">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="h6 mb-0">Flexible payment options </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-2">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="icon icon-shape icon-warning icon-sm rounded-circle mr-3">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="h6 mb-0">Free consultations </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-2">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="icon icon-shape icon-success icon-sm rounded-circle mr-3">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="h6 mb-0">Quality design and thoughfully crafted code</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <!-- Image -->
+                    <div class="position-relative zindex-100">
+                        <img alt="Image placeholder" src="../../picture1.gif" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg bg-primary pt-5 pt-lg-8">
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <!-- Container -->
+        <div class="container position-relative zindex-100">
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <div class="mt-4 mb-6">
+                            <h2 class="h1 text-white">
+                                Are you ready to grow faster?
+                            </h2>
+                            <h4 class="text-white mt-3">Let's build something extraordinary together</h4>
+                            <!-- Clients -->
+                            <div class="mt-4 clients">
+                                <div class="px-5 py-4 client-group row justify-content-center">
+                                    <div class="client col-lg-2 col-md-3 col-4 py-2">
+                                        <img alt="Image placeholder" src="../../assets/img/clients/svg/spotify-white.svg">
+                                    </div>
+                                    <div class="client col-lg-2 col-md-3 col-4 py-2">
+                                        <img alt="Image placeholder" src="../../assets/img/clients/svg/airbnb-white.svg">
+                                    </div>
+                                    <div class="client col-lg-2 col-md-3 col-4 py-2">
+                                        <img alt="Image placeholder" src="../../assets/img/clients/svg/paypal-white.svg">
+                                    </div>
+                                    <div class="client col-lg-2 col-md-3 col-4 py-2">
+                                        <img alt="Image placeholder" src="../../assets/img/clients/svg/slack-white.svg">
+                                    </div>
+                                    <div class="client col-lg-2 col-md-3 col-4 py-2">
+                                        <img alt="Image placeholder" src="../../assets/img/clients/svg/airbnb-white.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Play button -->
+                            <a href="https://www.youtube.com/watch?v=zodT9bCdIiI" data-fancybox data-toggle="tooltip" data-placement="bottom" title="Watch video in lightbox" class="btn btn-lg btn-white btn-icon hover-translate-y-n10 mt-4">
+                                <span class="btn-inner--icon">
+                                    <i data-feather="play"></i>
+                                </span>
+                                <span class="btn-inner--text">Play video</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice pt-0">
+        <div class="container position-relative zindex-100">
+            <div class="row">
+                <div class="col-lg-4 mt-n7">
+                    <div class="card mb-5 hover-translate-y-n10">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-warning badge-pill">Step 1</span>
+                            </div>
+                            <div class="pl-4">
+                                <h5>Project evaluation</h5>
+                                <p>
+                                    Lets evaluate your project or concept, and learn more about your objectives. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pb-5">
+                            <img src="../../undraw_real_time_collaboration_c62i.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-n7">
+                    <div class="card mb-5 hover-translate-y-n10">
+                        <div class="d-flex p-5">
+                            <div>
+                                <span class="badge badge-success badge-pill">Step 2</span>
+                            </div>
+                            <div class="pl-4">
+                                <h5>Design &amp; Programming</h5>
+                                <p>
+                                    Our designers and programmers will get to work, and provide progress updates.  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pb-5">
+                            <img src="../../undraw_code_typing_7jnv.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-n7">
+                    <div class="card mb-5 hover-translate-y-n10">
+                        <div class="d-flex p-5 p">
+                            <div>
+                                <span class="badge badge-danger badge-pill">Step 3</span>
+                            </div>
+                            <div class="pl-3">
+                                <h5>Finalizing Project</h5>
+                                <p>
+                                    Review our work, and make unlimited edits at no extra charge for thirty days.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pb-5">
+                            <img src="../../undraw_team_collaboration_8eoc.svg" class="img-fluid img-center" style="height: 200px;" alt="Illustration" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg bg-section-dark">
+        <div class="bg-absolute-cover bg-size--cover d-flex align-items-center">
+            <figure class="w-100 d-none d-lg-block">
+                <img src="../../assets/img/svg/backgrounds/dot-map.svg" class="svg-inject opacity-4"  />
+            </figure>
+        </div>
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <img src="../../assets/img/svg/separators/line.svg" class="svg-inject fill-primary">
+        </div>
+        <div class="container position-relative zindex-100">
+            <!-- Title -->
+            <!-- Section title -->
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-8 col-md-10">
+                    <h2 class="text-white mt-4">Join our global community</h2>
+                    <div class="mt-2">
+                        <p class="lead lh-180 text-white"> Our clients come in all sizes, and from many different countries.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Countries -->
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <!-- Title -->
+                    <h4 class="font-weight-bold text-white mb-5">
+                        Americas
+                    </h4>
+                    <!-- List -->
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img src="../../assets/img/icons/flags/us.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            United States
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/br.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Brasil
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/ca.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Canada
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/mx.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Mexico
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/pr.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Puerto Rico
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <!-- Heading -->
+                    <h4 class="font-weight-bold text-white mb-5">
+                        Asia Pacific
+                    </h4>
+                    <!-- List -->
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/au.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Australia
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/hk.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Hong Kong
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/in.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            India
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/id.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Indonesia
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/ma.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Malaysia
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/ph.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Philippines
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/sg.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Singapore
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <!-- Heading -->
+                    <h4 class="font-weight-bold text-white mb-5">
+                        Europe
+                    </h4>
+                    <!-- List -->
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/at.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Österreich
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/be.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            België
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/dk.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Danmark
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/fi.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Suomi
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/fr.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            France
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/de.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Deutschland
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/ir.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Ireland
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <!-- Heading -->
+                    <h4 class="font-weight-bold text-white mb-5">
+                        <span class="opacity-0">Europe</span>
+                    </h4>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/no.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Norge
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/pt.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Portugal
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/es.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            España
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/ch.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            Suisse
+                        </span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Flag -->
+                        <div>
+                            <img alt="Image placeholder" src="../../assets/img/icons/flags/gb.svg" class="rounded" style="height: 20px;" />
+                        </div>
+                        <!-- Text -->
+                        <span class="ml-3 text-white opacity-8">
+                            United Kingdom
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="slice pt-0 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-10">
+                    <span class="badge badge-primary badge-pill">Cool stats</span>
+                    <h5 class="h5 lh-180 mt-4 mb-5">Do you have a project in mind? Our team is ready to listen.</h5>
+                </div>
+            </div>
+            <div class="row justify-content-center justify-content-sm-start">
+                <div class="col-8 col-md-9 col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">
+                                        <span class="counter" data-from="0" data-to="17" data-speed="3000" data-refresh-interval="200"></span>
+                                        <span class="counter-extra"></span>
+                                    </h3>
+                                    <p class="text-muted mb-0">
+                                        Partners
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">
+                                        <span class="counter" data-from="0" data-to="2" data-speed="3000" data-refresh-interval="200"></span>
+                                        <span class="counter-extra">k</span>
+                                    </h3>
+                                    <p class="text-muted mb-0">
+                                        Projects
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">
+                                        <span class="counter" data-from="0" data-to="94" data-speed="3000" data-refresh-interval="200"></span>
+                                        <span class="counter-extra">%</span>
+                                    </h3>
+                                    <p class="text-muted mb-0">
+                                        Repeat Clients
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section title -->
+    <div class="row mb-5 justify-content-center text-center">
+        <div class="col-lg-8 col-md-10">
+            <h2 class=" mt-4">Helpful answers</h2>
+            <div class="mt-2">
+                <p class="lead lh-180">These are some of the most commonly asked questions.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Collapse -->
+    <div class="row">
+        <div class="col-xl-6">
+            <div id="accordion-1" class="accordion accordion-spaced">
+                <!-- Accordion card 1 -->
+                <div class="card">
+                    <div class="card-header py-4" id="heading-1-1" data-toggle="collapse" role="button" data-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                        <h6 class="mb-0"><i data-feather="file" class="mr-3"></i>How much do you charge?</h6>
+                    </div>
+                    <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p>The cost depends on the nature and scope of your project. Each project is different, and has different objectives, so we don't have fixed prices. Please contact us to discuss your project in more detail.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion card 2 -->
+                <div class="card">
+                    <div class="card-header py-4" id="heading-1-2" data-toggle="collapse" role="button" data-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
+                        <h6 class="mb-0"><i data-feather="unlock" class="mr-3"></i>What are your areas of expertise?</h6>
+                    </div>
+                    <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p>We have expertise in developing blockchain applications, mobile applications, web applications, and IoT devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion card 3 -->
+                <div class="card">
+                    <div class="card-header py-4" id="heading-1-3" data-toggle="collapse" role="button" data-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
+                        <h6 class="mb-0"><i data-feather="folder" class="mr-3"></i>What programming languages do you use?</h6>
+                    </div>
+                    <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3" data-parent="#accordion-1">
+                        <div class="card-body">
+                            <p>The scope of the project typically determines the programming language. Our programmers predominatly use C, C#, C++, Python, Ruby, PHP, Golang, Javascript, Java, Swift and Kotlin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6">
+            <div id="accordion-2" class="accordion accordion-spaced">
+                <!-- Accordion card 1 -->
+                <div class="card">
+                    <div class="card-header py-4" id="heading-2-1" data-toggle="collapse" role="button" data-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
+                        <h6 class="mb-0"><i data-feather="file" class="mr-3"></i>Do you charge a monthly retainer fee</h6>
+                    </div>
+                    <div id="collapse-2-1" class="collapse" aria-labelledby="heading-2-1" data-parent="#accordion-2">
+                        <div class="card-body">
+                            <p> No, we do not. If you need us to maintain the site, update code, or edit content, then you can choose our low cost hourly rate or negotiate a fixed rate.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion card 2 -->
+                <div class="card">
+                    <div class="card-header py-4" id="heading-2-2" data-toggle="collapse" role="button" data-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
+                        <h6 class="mb-0"><i data-feather="unlock" class="mr-3"></i>How much are the server costs?</h6>
+                    </div>
+                    <div id="collapse-2-2" class="collapse" aria-labelledby="heading-2-2" data-parent="#accordion-2">
+                        <div class="card-body">
+                            <p>There are a number of companies such as bluehost.com that provide server space for static websites. These websites typically charge less than $5 per month.
+                                If you are building a mobile or web application, we would advise using AWS or Microsoft Azure cloud servers since they are highly scalable. Our development team 
+                            will be happy to discuss these options in more detail.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion card 3 -->
+                <div class="card">
+                    <div class="card-header py-4" id="heading-2-3" data-toggle="collapse" role="button" data-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
+                        <h6 class="mb-0"><i data-feather="folder" class="mr-3"></i>I already own a website. Can I change programmers?</h6>
+                    </div>
+                    <div id="collapse-2-3" class="collapse" aria-labelledby="heading-2-3" data-parent="#accordion-2">
+                        <div class="card-body">
+                            <p>If you are unhappy with your current developer, then we are happy to help. Let's first have a conversation about the scope of your project.
+                                If it's something we can help with, then we'll review the coding files. If you don't have the coding files, then you will need to request them from your programmer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 mt-5 footer-dark bg-dark">
+            <!-- SVG shape -->
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <!-- Footer -->
+            <div class="container pt-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <h3 class="text-secondary mb-2">We build next generation technologies</h3>
+                                <p class="lead mb-0 text-white opacity-8">
+                                    Stay on the cutting edge with a team of programmers and designers that care about your success.
+                                </p>
+                            </div>
+                            <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
+                                <a href="" class="btn btn-white btn-icon my-2" target="_blank">
+                                    <span class="btn-inner--icon">
+                                        <i data-feather="book" class="text-primary"></i>
+                                    </span>
+                                    <span class="btn-inner--text">Partnerships</span>
+                                </a>
+                                <a href="" class="btn btn-primary my-2 ml-0 ml-sm-3" target="_blank">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-5">
+                <div class="row">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <!-- Theme's logo -->
+                        <a href="">
+                            <img alt="Logo" src="logo" id="footer-logo">
+                        </a>
+                        <!-- Social -->
+                        <ul class="nav mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="" target="_blank">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-12">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            &copy; 2020 <a href="" class="font-weight-bold" target="_blank">qodebotics</a>. All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS  -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="../../assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Optional JS -->
+    <script src="../../assets/libs/in-view/dist/in-view.min.js"></script>
+    <script src="../../assets/libs/sticky-kit/dist/sticky-kit.min.js"></script>
+    <script src="../../assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- Page JS -->
+    <script src="../../assets/libs/swiper/dist/js/swiper.min.js"></script>
+    <script src="../../assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="../../assets/libs/typed.js/lib/typed.min.js"></script>
+    <!-- Quick JS -->
+    <script src="../../assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+</body>
+
+</html>
