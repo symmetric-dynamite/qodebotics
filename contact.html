@@ -6,23 +6,22 @@
     <title>Contact</title>
 </head>
 <body>
-    <div id="tripetto"></div>
-<script src="https://unpkg.com/tripetto-runner-foundation"></script>
-<script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
-<script src="https://unpkg.com/tripetto-services"></script>
-<script>
-var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiVjhyd1pnUjI5L3JXWkFZeEdLOHdlazRENkR3N0hJYzhnelc5YlhSbkJNUT0iLCJkZWZpbml0aW9uIjoiRDNvMEdLLzhWOU5wWStUUnlucHowOXNQcllyY2NpT1h2M0NRQmZmRlhlQT0iLCJ0eXBlIjoiY29sbGVjdCJ9.Z8ZRLKDQq7G3PCBFRAftMabcykHjUO1f7TnNO_FpbWA" });
-
-TripettoAutoscroll.run({
-    element: document.getElementById("tripetto"),
-    definition: tripetto.definition,
-    styles: tripetto.styles,
-    l10n: tripetto.l10n,
-    locale: tripetto.locale,
-    translations: tripetto.translations,
-    attachments: tripetto.attachments,
-    onSubmit: tripetto.onSubmit
-});
-</script>
+    <script src="https://unpkg.com/tripetto-runner-foundation"></script>
+    <script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+    <script src="https://unpkg.com/tripetto-services"></script>
+    <script>
+    var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiVjhyd1pnUjI5L3JXWkFZeEdLOHdlazRENkR3N0hJYzhnelc5YlhSbkJNUT0iLCJkZWZpbml0aW9uIjoiRDNvMEdLLzhWOU5wWStUUnlucHowOXNQcllyY2NpT1h2M0NRQmZmRlhlQT0iLCJ0eXBlIjoiY29sbGVjdCJ9.Z8ZRLKDQq7G3PCBFRAftMabcykHjUO1f7TnNO_FpbWA" });
+    
+    TripettoAutoscroll.run({
+        element: document.body, /* Or supply your own element here */
+        definition: tripetto.definition,
+        styles: tripetto.styles,
+        l10n: tripetto.l10n,
+        locale: tripetto.locale,
+        translations: tripetto.translations,
+        attachments: tripetto.attachments,
+        onSubmit: tripetto.onSubmit
+    });
+    </script>
 </body>
 </html>
