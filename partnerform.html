@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Form</title>
+</head>
+<body>
+    <script src="https://unpkg.com/tripetto-runner-foundation"></script>
+<script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+<script src="https://unpkg.com/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiVjhyd1pnUjI5L3JXWkFZeEdLOHdlazRENkR3N0hJYzhnelc5YlhSbkJNUT0iLCJkZWZpbml0aW9uIjoiKzBTamZmTU10bS9FMS9DQ2FmWi81cWU0Y2o0eng0VzBTbURDVkkyNkdYbz0iLCJ0eXBlIjoiY29sbGVjdCJ9.KAX2aZUrwYYoonildppQ-9Pv3gIg8JnBcTd7XRztiQ0" });
+
+TripettoAutoscroll.run({
+    element: document.body, /* Or supply your own element here */
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit
+});
+</script>
+</body>
+</html>
